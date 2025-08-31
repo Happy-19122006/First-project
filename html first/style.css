@@ -1,0 +1,91 @@
+/* General Page Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    color: #333;
+}
+
+/* Header & Navigation Bar */
+header {
+    background-color: #837b7b;
+    padding: 10px 0;
+}
+
+nav {
+    text-align: right;
+}
+
+nav a {
+    color: rgb(250, 86, 86);
+    text-decoration: bold;
+    margin: 0 20px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    text-align: center;
+}
+
+nav a:hover {
+    color: #ff9800;
+    text-align: center;
+}
+
+/* Main Heading */
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    color: #222;
+}
+
+/* Paragraph Styling */
+p {
+    text-align: center;
+    font-size: 18px;
+    margin: 10px auto;
+    max-width: 600px;
+    line-height: 1.6;
+}
+
+/* Image Styling */
+img {
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+
+/* Social Links List */
+ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s ease; 
+    background-color: #faf2f2; 
+    padding: 10px 15px;color: #be1d1d;
+
+}
+
+ul li a:hover {
+    color: #ff9800; 
+}
+
+/* Footer Styling */
+footer {
+    background-color: #333;
+    color: rgb(199, 186, 186);
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 30px;
+}

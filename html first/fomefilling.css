@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joining Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #6a11cb, #2575fc);
+            margin: 0;
+            padding: 0;
+        }
+        h1, h2, h2 {
+            text-align: center;
+            color: rgb(30, 12, 12);
+            
+            font-weight: normal;
+            
+        }
+        form {
+            background: rgb(206, 230, 202);
+            max-width: 450px;
+            margin: 30px auto;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+        }
+        label {
+            font-weight: bold;
+            display: block;
+            margin-top: 10px;
+        }
+        input[type="text"],
+        input[type="number"],
+        input[type="password"],
+        input[type="date"],
+        input[type="email"] {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #71ad22;
+            border-radius: 5px;
+            outline: none;
+            transition: border 0.3s;
+        }
+        input[type="text"]:focus,
+        input[type="number"]:focus,
+        input[type="password"]:focus,
+        input[type="date"]:focus,
+        input[type="email"]:focus {
+            border: 1px solid #2575fc;
+        }
+        input[type="radio"], input[type="checkbox"] {
+            margin-right: 5px;
+        }
+        input[type="submit"] {
+            background: #2575fc;
+            color: rgb(21, 40, 75);
+            padding: 10px 15px;
+            border: none;
+            width: 100%;
+            font-size: 16px;
+            margin-top: 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        input[type="submit"]:hover {
+            background: #cadd8e;
+        }
+    </style>
+</head>
+<body>
+    <h3>Form Filling for the Joining</h3>
+    <h5>Personal Info</h5>
+
+    <form action="google.html" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+        <label for="hobby">Hobby:</label>
+        <input type="text" id="hobby" name="hobby" placeholder="Enter your hobby" required>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" placeholder="Enter your age" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password" required>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+        <h4>Qualification</h4>
+        <label for="degree">Degree:</label>
+        <input type="text" id="degree" name="degree" placeholder="Enter your degree" required>
+
+        <label for="college">College:</label>
+        <input type="text" id="college" name="college" placeholder="Enter your college name" required>
+
+        <label for="year">Year of Passing:</label>
+        <input type="number" id="year" name="year" placeholder="Enter year of passing" required>
+
+        <label for="branch">Branch:</label>
+        <input type="text" id="branch" name="branch" placeholder="Enter your branch" required>
+
+        <h4>What is your gender?</h4>
+        <input type="radio" id="male" name="gender" value="Male" required>
+        <label for="male">Male</label>
+
+        <input type="radio" id="female" name="gender" value="Female" required>
+        <label for="female">Female</label>
+
+        <input type="radio" id="other" name="gender" value="Other" required>
+        <label for="other">Other</label>
+
+        <h4>Which languages do you know?</h4>
+        <input type="checkbox" id="HTML" name="languages[]" value="HTML">
+        <label for="HTML">HTML</label>
+
+        <input type="checkbox" id="CSS" name="languages[]" value="CSS">
+        <label for="CSS">CSS</label>
+
+        <input type="checkbox" id="JavaScript" name="languages[]" value="JavaScript">
+        <label for="JavaScript">JavaScript</label>
+
+        <input type="checkbox" id="Python" name="languages[]" value="Python">
+        <label for="Python">Python</label>
+
+        <input type="checkbox" id="java" name="languages[]" value="Java">
+        <label for="java">Java</label>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
