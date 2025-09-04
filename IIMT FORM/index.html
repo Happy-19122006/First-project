@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animated Form</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: linear-gradient(135deg, #6e8efb, #a777e3);
+      background-image:< https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQxwqk3taV8vxgO6zbDskrC5o559mKrBb_JQ&s;
+    }
+
+    .form-container {
+      background: #ece9e9;
+      padding: 30px;
+      border-radius: 50px;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+      width: 320px;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    .form-container h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    .form-group {
+      position: relative;
+      margin-bottom: 30px;
+    }
+
+    .form-group input {
+      width: 100%;
+      padding: 12px;
+      border: 2px solid #ccc;
+      border-radius: 10px;
+      outline: none;
+      font-size: 16px;
+      transition: 0.3s;
+    }
+
+    .form-group label {
+      position: absolute;
+      left: 12px;
+      top: 12px;
+      background: #fff;
+      padding: 0 5px;
+      color: #777;
+      pointer-events: none;
+      transition: 0.3s;
+    }
+
+    .form-group input:focus {
+      border-color: #6e8efb;
+      box-shadow: 0 0 10px rgba(110, 142, 251, 0.4);
+    }
+
+    .form-group input:focus + label,
+    .form-group input:not(:placeholder-shown) + label {
+      top: -10px;
+      left: 10px;
+      font-size: 12px;
+      color: #6e8efb;
+    }
+
+    .btn {
+      width: 100%;
+      padding: 12px;
+      background: #6e8efb;
+      border: none;
+      border-radius: 10px;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+      transition: transform 0.2s, background 0.3s;
+    }
+
+    .btn:hover {
+      background: #5a75e1;
+      transform: scale(1.05);
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(-20px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+  </style>
+</head>
+<body>
+  
+    <div class="form-container">
+    <h2>IIMT program form</h2>
+    <img src="https://www.iimtindia.net/images/logo.png" alt="IIMT Logo"style="display: block; margin: 0 auto 20px; width: 100px; height: auto;"> 
+      
+    <form>
+      <div class="form-group">
+        <input type="text" id="name" required placeholder=" ">
+        <label for="name">Full Name</label>
+      </div>
+      <div class="form-group">
+        <input type="email" id="email" required placeholder=" ">
+        <label for="email">Email</label>
+      </div>
+      <div class="form-group">
+        <input type="password" id="password" required placeholder=" ">
+        <label for="password">Password</label>
+      </div>
+      <div class="form-group">
+        <input type="text" id="course" required placeholder=" ">
+        <label for="course">Course</label>
+        </div>
+        <div class="form-group">
+        <input type="text" id="branch" required placeholder=" ">
+        <label for="branch">Branch</label>
+        </div>
+        <div class="form-group">
+        <input type="text" id="year" required placeholder=" ">
+        <label for="year">Year</label>
+        </div>
+        <div class="form-group">
+        <input type="text" id="college name" required placeholder=" ">
+        <label for="college">College Name</label>
+        </div>
+        
+        <div> 
+            DOB: <input type="date" id="dob" name="dob" style="height:50%;">
+            <label for="dob"></label> <br><br><br>
+        </div>
+        <div class="form-group"> 
+            Phone: <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required">
+            <label for="phone"></label>
+        </div>
+        <div> 
+             GENDER <br><br>
+             <input type="radio" id="male" name="gender" value="Male">
+    <label for="male">Male</label><br>
+
+    <input type="radio" id="female" name="gender" value="Female">
+    <label for="female">Female</label><br>
+
+    <input type="radio" id="other" name="gender" value="Other">
+    <label for="other">Other</label><br>
+        </div>
+      <button type="submit" class="btn">Submit</button>
+
+    </form>
+  </div> 
+  
+</body>
+</html>
